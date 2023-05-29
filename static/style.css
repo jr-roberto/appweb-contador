@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: blue;
+    color: white;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 100px);
+}
+
+main div.circulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border: solid 3px lightblue;
+    border-radius: 50%;
+}
+
+main div.circulo button {
+    padding: 20px;
+    font-size: 16px;
+}
+
+main div.circulo p {
+    font-size: 100px;
+}
