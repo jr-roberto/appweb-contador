@@ -9,41 +9,57 @@ body {
     height: 100vh;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    background-color: blue;
-    color: white;
-}
-
-header h1 {
-    font-size: 30px;
-}
-
 main {
+    overflow: auto;
+    height: 100%;
+    background: linear-gradient(#f47c7b,#b19b9c);
+}
+
+main section {
+    height: 100vh;
+    width: 100vw;
+}
+
+section.capa {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100% - 100px);
-}
-
-main div.circulo {
-    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 200px;
-    border: solid 3px lightblue;
-    border-radius: 50%;
+    gap: 30px;
 }
 
-main div.circulo button {
-    padding: 20px;
-    font-size: 16px;
+div.capa__topo {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    border-bottom: lightgray 1px;
+    border-bottom-style: inset;
+    padding-bottom: 10px;
 }
 
-main div.circulo p {
-    font-size: 100px;
+div.capa__conteudo img{
+    width: 250px;
+    box-shadow: 0 0 10px white;
+    border-radius: 5px 80px 15px;
+}
+
+section.capa button {
+    outline-style: none;
+    padding: 5px;
+    width: 50%;
+    font-size: 30px;
+    border-radius: 30px;
+    background: linear-gradient(#be6041,#b19b9c);
+    color: white;
+    font-family: monospace;
+    box-shadow: 0 0 10px black;
+}
+
+section.agenda {
+    background: green;
+    transition: .2s;
+}
+
+section.agenda.show {
+    top: 0;
 }
