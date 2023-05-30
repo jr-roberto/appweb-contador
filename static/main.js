@@ -1,4 +1,4 @@
 function agendaSite() {
-    let btnAgenda = document.getElementById("btnAgenda");
-    btnAgenda.classList.add("show");
+    let telaCapaInicial = document.getElementById("telaCapaInicial");
+    telaCapaInicial.classList.add("close");
 }

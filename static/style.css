@@ -26,6 +26,12 @@ section.capa {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+section.capa.close {
+    height: 0;
 }
 
 div.capa__topo {
@@ -56,7 +62,6 @@ section.capa button {
 }
 
 section.agenda {
-    background: green;
     transition: .2s;
 }
 
