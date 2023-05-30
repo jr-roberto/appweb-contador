@@ -34,7 +34,7 @@ section.capa.close {
     height: 0;
 }
 
-div.capa__topo {
+div.capa__topo, div.agenda__topo {
     color: white;
     font-size: 25px;
     text-align: center;
@@ -67,4 +67,32 @@ section.agenda {
 
 section.agenda.show {
     top: 0;
+}
+
+
+div.agenda__conteudo {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 85px);
+    width: 100%;
+    background: gray;
+    align-items: center;
+}
+
+div.horarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    gap: 15px;
+    max-height: 90%;
+    width: 100%;
+}
+
+div.horarios div {
+    background-color: lightblue;
+    border-left: solid 5px blue;
+    height: 150px;
+    width: 90%;
+    box-shadow: 0 0 10px black;
 }
